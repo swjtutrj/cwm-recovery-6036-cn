@@ -1,0 +1,17 @@
+Cwm-recovery-6.0.3.6中文源码
+
+作者：Xs
+
+源码说明：
+
+1、采用Ruby生成字库方法汉化
+
+2、针对MTK进行了部分修改
+
+{
+
+a、修改mmcutils.c 支持MTK备份“其它平台请注释掉MTK相关”
+
+b、添加MTK USB挂载代码以支持MTK平台USB挂载模式
+
+}
