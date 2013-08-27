@@ -124,7 +124,7 @@ canvas = Image.new(img_width, img_height)
 text = Draw.new
 text.gravity = WestGravity
 text.pointsize = font_point_size.to_i
-text.font = 'fonts/simhei.ttf'
+text.font = 'fonts/simsun.ttc'
 p "painting basic ascii"
 for i in 0...96
     ch = s[i, 1]
@@ -133,7 +133,7 @@ for i in 0...96
     text.text(i * char_width, 0, ch)
 end
 text.draw(canvas)
-text.font = 'fonts/simsun.ttc'
+text.font = 'fonts/simhei.ttf'
 p "painting extra characters"
 for i in 0...count
     ch = Iconv.iconv('utf-8', 'gb2312', c[i * 2, 2])[0]
